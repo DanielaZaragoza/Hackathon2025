@@ -1,13 +1,14 @@
 #include <WiFi.h>
 #include <FirebaseESP32.h>
 #include <DHT.h>
-/*Descomentar y agregar la red wifi y la contraseña 
-//#define WIFI_SSID "Red_Wifi"
-#define WIFI_PASSWORD "Contraseña"*/
+//Descomentar y agregar la red wifi y la contraseña 
+#define WIFI_SSID "Red_Wifi"
+#define WIFI_PASSWORD "Contraseña"
 
+// Ingresar crendeciales de la base de datos (URL y La clav de autenticación de firebase)
 // Configuración de Firebase
-#define FIREBASE_HOST "proyecto-f9514-default-rtdb.firebaseio.com" // URL de tu base de datos
-#define FIREBASE_AUTH "AIzaSyBJvGYVM4pH0uXt4Eu_nkqph7FhDn3BUGU" // Tu clave de autenticación
+#define FIREBASE_HOST "URL" // URL de tu base de datos
+#define FIREBASE_AUTH "CLAVE" // Tu clave de autenticación
 
 
 
