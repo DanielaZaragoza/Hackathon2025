@@ -1,9 +1,9 @@
 #include <WiFi.h>
 #include <FirebaseESP32.h>
 #include <DHT.h>
-
-#define WIFI_SSID "Alumnos"
-#define WIFI_PASSWORD "@@1umN05@@"
+/*Descomentar y agregar la red wifi y la contraseña 
+//#define WIFI_SSID "Red_Wifi"
+#define WIFI_PASSWORD "Contraseña"*/
 
 // Configuración de Firebase
 #define FIREBASE_HOST "proyecto-f9514-default-rtdb.firebaseio.com" // URL de tu base de datos
