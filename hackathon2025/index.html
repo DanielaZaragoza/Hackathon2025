@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SmartSpace</title>
+
+        <!--Poppins Font-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!--Material Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+        <!--Css-->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+        <div class="grid-container">
+
+            <!--Header-->
+            <header class="header">
+                <div class="main-title">
+                    <h2>SmartSpace</h2>
+                </div>
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <button id="account-button" class="account-btn">
+                <span class="material-icons-outlined">account_circle</span>
+            </button>
+
+
+        </header>
+            <!--End Header-->
+
+            <!--Sidebar-->
+            <aside id="sidebar">
+                <div class="sidebar-title">
+                    <div class="sidebar-brand">
+                        <span class="material-icons-outlined">category</span> CATEGORIA
+                    </div>
+                    </div>
+
+                    <ul class="sidebar-list">
+                        <li class="sidebar-list-item">
+                            <button class="sidebar-button">
+                                <span class="material-icons-outlined">dashboard</span> Dashboard
+                            </button>
+                        </li>
+                    </ul>       
+                    <ul class="sidebar-list">             
+                        <li class="sidebar-list-item">
+                            <button class="sidebar-button">
+                            <span class="material-icons-outlined">groups</span> Areas
+                        </button>
+                        </li>
+                    </ul>
+            </aside>
+            <!--End Sidebar-->
+
+            <!--Main-->
+            <main class="main-container">
+
+    
+                <div class="main-cards">
+
+
+                    <div class="card">
+                        <div class="card-inner">
+                            <h3>GRAFICAS</h3>
+                            <span class="material-icons-outlined">trending_up</span>
+                        </div>
+                        <h1>15%</h1>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <h3>ALERTAS</h3>
+                            <span class="material-icons-outlined">notification_important</span>
+                        </div>
+                        <h1>3</h1>
+                    </div>
+                </div>
+
+                <div class="charts">
+
+                    <div class="charts-card">
+                        <h2 class="chart-title">Humedad - Temperatura</h2>
+                        <div id="bar-chart"></div>
+                    </div>
+                    <div class="charts-card">
+                        <h2 class="chart-title">Area 1</h2>
+                        <div id="chart"></div>
+                    </div>
+                    <div class="charts-card">
+                        <h2 class="chart-title">Area 2</h2>
+                        <div id="chart2"></div>
+                    </div>
+                    <div class="charts-card">
+                        <h2 class="chart-title">Area 3</h2>
+                        <div id="chart3"></div>
+                    </div>
+                </div>
+            </main>
+            
+            
+            
+            <!--End Main-->
+        </div>
+
+
+        <!--Scripts-->
+        <!--Apex Charts-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+
+
+<!-- Modal -->
+<div id="account-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="user-name">Bienvenido, Admin</h3>
+        <button id="logout-button">Cerrar sesión</button>
+    </div>
+</div>
+</div>
+        <!--JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
